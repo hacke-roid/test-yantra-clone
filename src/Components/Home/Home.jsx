@@ -3,7 +3,6 @@ import "./HomeModule.css";
 import { FaArrowRight } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import Slider1 from "./image1.png";
 import Slider2 from "./image2.png";
 import Slider3 from "./image3.png";
@@ -18,6 +17,9 @@ import Location from "./location.webp";
 import ClientGlobals from "./ClientAcrossGlobe.webp";
 import TotalTeam from "./TeamMembers.webp";
 import Demand from "./OnDemandEngineers.webp";
+import blog16 from "./blog16.webp";
+import blog15 from "./blog15.webp";
+import blog14 from "./blog14.webp";
 
 const Home = () => {
   const [isEnter1, setIsEnter] = useState(false);
@@ -34,6 +36,38 @@ const Home = () => {
   const [isEnterBox2, setIsEnterBox2] = useState(false);
   const [isEnterBox3, setIsEnterBox3] = useState(false);
   const [isEnterBox4, setIsEnterBox4] = useState(false);
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+
+  const slides = [
+    {
+      title: "Turn your Manual Testers into Automation Testers",
+      description: "slide 1",
+      background: Slider1,
+    },
+    {
+      title: "Slide 2 Title",
+      description: "Description for Slide 2",
+      background: Slider2,
+    },
+    {
+      title: "Slide 3 Title",
+      description: "Description for Slide 2",
+      background: Slider3,
+    },
+  ];
+
+  useEffect(() => {}, []);
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const hadleSlideClick = () => {
+    setCurrentSlide((prev) => (prev+1)%slides.length);
+    console.log("hii")
+  }
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -151,24 +185,27 @@ const Home = () => {
           </div>
         </div>
         <div className="background_container">
-          <div className="row2">
-            <Slider {...settings}>
+          <div
+            className="row2"
+            style={{
+              backgroundImage: `url(${slides[currentSlide].background})`,
+            }}
+            onClick={hadleSlideClick}
+          >
+            <div className="slide-content">
               <div>
-                <img src={Slider1} alt="slider" className="slider-image" />
+                <h3>{slides[currentSlide].title}</h3>
               </div>
-              <div>
-                <img src={Slider2} alt="slider" className="slider-image" />
+              <div className="slide_list">
+                <p>{slides[currentSlide].description}</p>
               </div>
-              <div>
-                <img src={Slider3} alt="slider" className="slider-image" />
-              </div>
-            </Slider>
+            </div>
           </div>
         </div>
       </div>
       <section className="service_area">
         <div className="service_container">
-          <div className="heading_container">
+          <div className="heading_container" id="header-speaker">
             <h1>
               Leverage Test Yantra Global's range
               <br />
@@ -332,7 +369,7 @@ const Home = () => {
       </section>
       <section>
         <div className="speak-container">
-          <div>
+          <div className="header-speaker">
             <h1>The numbers speak for themselves</h1>
           </div>
           <div className="box_all">
@@ -350,9 +387,9 @@ const Home = () => {
                 <div>
                   <img src={Location} alt="locationLogo" />
                 </div>
-                <div>{countryValue}</div>
+                <div className="number">{countryValue}</div>
                 <div>
-                  <h3>Countries & Growing</h3>
+                  <h2>Countries & Growing</h2>
                 </div>
               </div>
               <div
@@ -368,9 +405,9 @@ const Home = () => {
                 <div>
                   <img src={ClientGlobals} alt="Client global" />
                 </div>
-                <div>{clientValue}+</div>
+                <div className="number">{clientValue}+</div>
                 <div>
-                  <h3>Clients Across Globe</h3>
+                  <h2>Clients Across Globe</h2>
                 </div>
               </div>
               <div
@@ -386,9 +423,9 @@ const Home = () => {
                 <div>
                   <img src={TotalTeam} alt="totalTeam" />
                 </div>
-                <div>{TeamMembers}+</div>
+                <div className="number">{TeamMembers}+</div>
                 <div>
-                  <h3>Total Team Members</h3>
+                  <h2>Total Team Members</h2>
                 </div>
               </div>
               <div
@@ -404,10 +441,103 @@ const Home = () => {
                 <div>
                   <img src={Demand} alt="" />
                 </div>
-                <div>{demand}+</div>
+                <div className="number">{demand}+</div>
                 <div>
-                  <h3>On Demand Test Engineers</h3>
+                  <h2>On Demand Test Engineers</h2>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="section-three">
+        <div className="article_container">
+          <div>
+            <h2>Our Recent Articles</h2>
+          </div>
+          <div className="article-box">
+            <div className="box">
+              <div className="blog-img">
+                <img src={blog16} alt="" id="blog" />
+              </div>
+              <div className="enter-meta">
+                <div>
+                  <ul>
+                    <li>Blog </li>
+                    <li>Software Testing</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2>
+                    Comprehensive Guide to Developing Test Scripts for Software
+                    Testing
+                  </h2>
+                </div>
+                <div>
+                  <p>
+                    Effective software testing is essential for the delivery of
+                    high-quality software products. The development of test
+                    scripts is a critical...
+                  </p>
+                </div>
+              </div>
+              <div className="readMe-btn">
+                <button>Read Me</button>
+              </div>
+            </div>
+            <div className="box">
+              <div className="blog-img">
+                <img src={blog15} alt="" id="blog" />
+              </div>
+              <div className="enter-meta">
+                <div>
+                  <ul>
+                    <li>Blog</li>
+                    <li>Categeries of Test</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2>Guidelines for Writing Effective Unit Tests</h2>
+                </div>
+                <div>
+                  <p>
+                    Unit testing is a core component of software testing that
+                    targets the smallest testable parts of an application. By
+                    validating .....
+                  </p>
+                </div>
+              </div>
+              <div className="readMe-btn">
+                <button>Read Me</button>
+              </div>
+            </div>
+            <div className="box">
+              <div className="blog-img">
+                <img src={blog14} alt="" id="blog" />
+              </div>
+              <div className="enter-meta">
+                <div>
+                  <ul>
+                    <li>Blog</li>
+                    <li>Test Data</li>
+                  </ul>
+                </div>
+                <div>
+                  <h2>
+                    Automation Testing Tools: Selenium, Cypress, Playwright,
+                    Robot Framework vs. FireFlink
+                  </h2>
+                </div>
+                <div>
+                  <p>
+                    Exploring the diverse realm of automation testing tools is
+                    essential for understanding the specific advantages,
+                    limitations.....
+                  </p>
+                </div>
+              </div>
+              <div className="readMe-btn">
+                <button>Read Me</button>
               </div>
             </div>
           </div>
