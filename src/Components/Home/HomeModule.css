@@ -4,6 +4,7 @@
   margin: 20px;
   padding: 10px;
   /* width: 80%; */
+  margin-top: 100px;
 }
 
 .container-fluid {
@@ -25,7 +26,7 @@
 .Info_container span {
   font-size: larger;
   font-weight: bolder;
-  color: rgb(218, 141, 0);
+  color: #f27f3d;
   padding: 10px 0 10px 0;
 }
 
@@ -60,12 +61,12 @@
 }
 
 .btn_started:hover {
-  background-color: orange;
+  background-color: #f27f3d;
   color: white;
 }
 
 .arrow {
-  color: orange;
+  color: #f27f3d;
   margin: 10px;
 }
 
@@ -191,7 +192,7 @@
 }
 
 #box1.active {
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid #f27f3d;
   transition-duration: 0.5s;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
 }
@@ -203,7 +204,7 @@
 }
 
 #box2.active {
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid #f27f3d;
   transition-duration: 0.5s;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
 }
@@ -215,7 +216,7 @@
 }
 
 #box3.active {
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid #f27f3d;
   transition-duration: 0.5s;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
 }
@@ -227,7 +228,7 @@
 }
 
 #box4.active {
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid #f27f3d;
   transition-duration: 0.5s;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
 }
@@ -239,7 +240,7 @@
 }
 
 #box5.active {
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid #f27f3d;
   transition-duration: 0.5s;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
 }
@@ -274,7 +275,7 @@
 
 .typing-effect {
   font-size: 24px;
-  color: orange;
+  color: #f27f3d;
   font-weight: bold;
   border-right: 2px solid black;
   display: inline-block;
@@ -342,7 +343,7 @@
   transform: translateY(-10px);
   transition-duration: 0.5s;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
-  border-bottom: 5px solid orange;
+  border-bottom: 5px solid #f27f3d;
 }
 
 .background_container {
@@ -470,7 +471,7 @@
     outline: none;
     border: none;
     border-radius: 10px;
-    background-color: orange;
+    background-color: #f27f3d;
     color: white;
     padding: 5px;
     transition-duration: 0.5s;

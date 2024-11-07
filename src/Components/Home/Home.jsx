@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./HomeModule.css";
 import { FaArrowRight } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
@@ -22,6 +23,8 @@ import blog15 from "./blog15.webp";
 import blog14 from "./blog14.webp";
 
 const Home = () => {
+
+  const navigate = useNavigate();
   const [isEnter1, setIsEnter] = useState(false);
   const [isEnter2, setIsEnter2] = useState(false);
   const [isEnter3, setIsEnter3] = useState(false);
@@ -75,13 +78,12 @@ const Home = () => {
         if (prevValue < 6) {
           return prevValue + 1;
         } else {
-          clearInterval(intervalId); // Stop the interval once it reaches 6
+          clearInterval(intervalId); 
           return prevValue;
         }
       });
     }, 50);
 
-    // Clean up the interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
 
@@ -149,6 +151,10 @@ const Home = () => {
     setShowImage(!showImage);
   };
 
+  const handleContactClick = () => {
+    navigate('./contacts')
+  };
+
   const sentence = [
     "Unify Web, Mobile, API, and DB Testing..|",
     "Achieve Digital Transformation..",
@@ -177,7 +183,7 @@ const Home = () => {
               android, iOS, API, and DB testing, we have the expertise,
               technology, experience, and tools to help transform your business.
             </p>
-            <div className="btn_started_container">
+            <div className="btn_started_container" onClick={handleContactClick}>
               <button className="btn_started">
                 Get Started Free <FaArrowRight className="arrow" />
               </button>
