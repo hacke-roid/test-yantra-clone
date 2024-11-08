@@ -1,15 +1,16 @@
 .sec6{
     /* border: 2px solid yellow; */
-    height: 580px;
-    /* background-image: url("https://media.istockphoto.com/id/1678013882/vector/global-network-connection-world-map-point-and-line-composition-concept-of-global-business.jpg?s=612x612&w=0&k=20&c=uiZwz59T1VUydD1FlBoSYIQ_SfPfw6B8Ac-uU4hW-qM="); */
+    height: 600px;
+    /* background-image: url("./Components/Home/footerBackground.webp"); */
     background-color: #162d52;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    
+    background-image: url("./Components/Home/footerBackground.webp");
+    background-repeat: no-repeat;
+    /* position: relative; */
+    padding-top: 50px;
 }
 .search_con{
-    /* border: 2px solid green; */
     height: 170px;
     display: flex;
     align-items: center;
@@ -21,15 +22,15 @@
     font-weight: 900;
 }
 .search_bar{
-    /* border: 2px solid blue; */
-    height: 40px;
+    height: 50px;
     border-radius: 50px;
-    width: 400px;
+    width: 500px;
     background-color: white;
+    margin-top: 20px;
 }
 .search_bar>input{
    height: 85%;
-   width: 255px;
+   width: 355px;
    padding: 15px;
    border-radius: 50px;
    border: none;
@@ -51,23 +52,25 @@
     font-size: 20px;
     font-weight: 400;
     border: none;
+    transition: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
 }
 .search_bar>button:hover{
     background-color: rgb(175, 217, 239);
     color: orange;
 }
 .footcon{
-    /* border: 2px solid red; */
     border-bottom:1px solid rgba(64, 63, 117, 0.877);
     height: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 30px;
+  
     
 }
 .foot1{
-    /* border: 1px solid white; */
     height: 100%;
     width: 280px;
 }
@@ -114,7 +117,7 @@
     height: 250px;
     width: 60%;
 }
-.f2_con>h1{
+.f2_con>h2{
     color: white;
 }
 .f1,.f2,.f3{

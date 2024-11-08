@@ -4,7 +4,7 @@ import PARTNERLOGO from "./Components/Home/partnerlogo2 (1).svg";
 
 const Footer = () => {
   return (
-    <section className="sec6">
+    <footer className="sec6">
       <div className="search_con">
         <h1>Subscribe to our Newsletter!</h1>
         <br />
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
         <div className="foot1 f1">
           <div className="f2_con">
-            <h1>Services</h1>
+            <h2>Services</h2>
             <div className="line"></div>
             <p>Software Testing (TaaS)</p>
             <p>Software Development</p>
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
         <div className="foot1 f2">
           <div className="f2_con">
-            <h1>Quick Links</h1>
+            <h2>Quick Links</h2>
             <div className="line"></div>
             <p>About Us</p>
             <p>Fireflink</p>
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
         <div className="foot1 f3">
           <div className="f2_con">
-            <h1>Contacts</h1>
+            <h2>Contacts</h2>
             <div className="line"></div>
             <p>Address:120 Adelaide Street</p>
             <p>Wast,</p>
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

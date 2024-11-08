@@ -10,7 +10,7 @@ const Contacts = () => {
 
   return (
     <div className="contact-area">
-      <section>
+      <section className="background-banner">
         <div className="contact-banner">
           <div className="details-content">
             <div className="text-span">
@@ -49,7 +49,7 @@ const Contacts = () => {
                   </select>
                 </div>
                 <div>
-                  <input type="tel" placeholder="Phone Number"/>
+                  <input type="tel" placeholder="Phone Number" />
                 </div>
               </div>
               <div className="col-lg-3">
@@ -68,17 +68,22 @@ const Contacts = () => {
             </form>
           </div>
           <div className="table-container">
-            <table cellPadding="20px"  >
-               <tbody>
+            <table cellPadding="20px">
+              <tbody>
                 <tr>
-                    <td className="td-lg-1">Contact Us By Phone</td>
-                    <td style={{color: "orange", fontWeight: "bold"}}><BsFillTelephoneFill style={{color: "orange"}}/> 1800 572 7905</td>
+                  <td className="td-lg-1">Contact Us By Phone</td>
+                  <td style={{ color: "orange", fontWeight: "bold" }}>
+                    <BsFillTelephoneFill style={{ color: "orange" }} /> 1800 572
+                    7905
+                  </td>
                 </tr>
                 <tr>
-                    <td className="td-lg-1">Number Or Email Address</td>
-                    <td style={{color: "orange", fontWeight: "bold"}}><MdOutlineEmail /> hello@testyantraglobal.com</td>
+                  <td className="td-lg-1">Number Or Email Address</td>
+                  <td style={{ color: "orange", fontWeight: "bold" }}>
+                    <MdOutlineEmail /> hello@testyantraglobal.com
+                  </td>
                 </tr>
-               </tbody> 
+              </tbody>
             </table>
           </div>
         </div>

@@ -4,6 +4,8 @@ import "./HomeModule.css";
 import { FaArrowRight } from "react-icons/fa6";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaArrowCircleRight } from "react-icons/fa";
+import Slider from "react-slick";
 import Slider1 from "./image1.png";
 import Slider2 from "./image2.png";
 import Slider3 from "./image3.png";
@@ -23,7 +25,6 @@ import blog15 from "./blog15.webp";
 import blog14 from "./blog14.webp";
 
 const Home = () => {
-
   const navigate = useNavigate();
   const [isEnter1, setIsEnter] = useState(false);
   const [isEnter2, setIsEnter2] = useState(false);
@@ -44,17 +45,23 @@ const Home = () => {
   const slides = [
     {
       title: "Turn your Manual Testers into Automation Testers",
-      description: "slide 1",
+      description1: "Easy to use",
+      description2: " No code Natural Language Processing",
+      description3: " Begin automating in hours",
       background: Slider1,
     },
     {
-      title: "Slide 2 Title",
-      description: "Description for Slide 2",
+      title: "Automate Across Multiple Test Applications and Platforms",
+      description1: " Web automation ",
+      description2: " Android and iOS",
+      description3: " Step based API's",
       background: Slider2,
     },
     {
-      title: "Slide 3 Title",
-      description: "Description for Slide 2",
+      title: "Scalable On-Demand Test Management Platform",
+      description1: " Execute across cloud services ",
+      description2: " Automated test distribution",
+      description3: " Emulators, simulators, and real devices",
       background: Slider3,
     },
   ];
@@ -63,14 +70,14 @@ const Home = () => {
   React.useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 6000);
     return () => clearInterval(interval);
   }, []);
 
   const hadleSlideClick = () => {
-    setCurrentSlide((prev) => (prev+1)%slides.length);
-    console.log("hii")
-  }
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    console.log("hii");
+  };
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -78,7 +85,7 @@ const Home = () => {
         if (prevValue < 6) {
           return prevValue + 1;
         } else {
-          clearInterval(intervalId); 
+          clearInterval(intervalId);
           return prevValue;
         }
       });
@@ -136,7 +143,7 @@ const Home = () => {
   });
 
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -152,7 +159,7 @@ const Home = () => {
   };
 
   const handleContactClick = () => {
-    navigate('./contacts')
+    navigate("./contacts");
   };
 
   const sentence = [
@@ -183,15 +190,15 @@ const Home = () => {
               android, iOS, API, and DB testing, we have the expertise,
               technology, experience, and tools to help transform your business.
             </p>
-            <div className="btn_started_container" onClick={handleContactClick}>
-              <button className="btn_started">
+            <div className="btn_started_container">
+              <button className="btn_started" onClick={handleContactClick}>
                 Get Started Free <FaArrowRight className="arrow" />
               </button>
             </div>
           </div>
         </div>
         <div className="background_container">
-          <div
+        <div
             className="row2"
             style={{
               backgroundImage: `url(${slides[currentSlide].background})`,
@@ -203,7 +210,11 @@ const Home = () => {
                 <h3>{slides[currentSlide].title}</h3>
               </div>
               <div className="slide_list">
-                <p>{slides[currentSlide].description}</p>
+                <ul>
+                  <li><FaArrowCircleRight style={{color: "#f27f3d"}}/> {slides[currentSlide].description1}</li>
+                  <li><FaArrowCircleRight style={{color: "#f27f3d"}}/> {slides[currentSlide].description2}</li>
+                  <li><FaArrowCircleRight style={{color: "#f27f3d"}}/> {slides[currentSlide].description3}</li>
+                </ul>
               </div>
             </div>
           </div>

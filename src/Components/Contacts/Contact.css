@@ -2,14 +2,21 @@
   margin-top: 110px;
   /* border: 2px solid black; */
   background-color: #f2f6f9;
+  /* width: 100%; */
+}
+
+.background-banner{
+  /* width: 100%; */
+  background-image: url("./Image/contact-banner.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .contact-banner {
   /* border: 2px solid red; */
   height: 250px;
   width: 100%;
-  background-image: url("./Image/contact-banner.png");
-  background-repeat: no-repeat;
+  
   display: flex;
   align-items: center;
   /* justify-content: center; */
