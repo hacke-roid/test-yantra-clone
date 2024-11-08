@@ -1,12 +1,13 @@
 .sec6{
     /* border: 2px solid yellow; */
-    height: 600px;
+    height: 700px;
     /* background-image: url("./Components/Home/footerBackground.webp"); */
     background-color: #162d52;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("./Components/Home/footerBackground.webp");
     background-repeat: no-repeat;
+    background-position: 75%;
     /* position: relative; */
     padding-top: 50px;
 }

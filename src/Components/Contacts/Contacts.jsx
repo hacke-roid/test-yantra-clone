@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
+import INDIA from "./Image/india.webp";
+import IRELAND from "./Image/Ireland.webp";
+import NETHERLAND from "./Image/Netherland.webp";
+import UNITEDSTATE from "./Image/united-states.webp";
+import UNITEDLKINGDOM from "./Image/unitedKingdom.webp";
+import CANADA from "./Image/canada.webp";
 
 const Contacts = () => {
+  const [isEnter1, setIsEnter1] = useState(false);
+  const [isEnter2, setIsEnter2] = useState(false);
+  const [isEnter3, setIsEnter3] = useState(false);
+  const [isEnter4, setIsEnter4] = useState(false);
+  const [isEnter5, setIsEnter5] = useState(false);
+  const [isEnter6, setIsEnter6] = useState(false);
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
   };
@@ -85,6 +98,140 @@ const Contacts = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+      </section>
+      <section className="section-service-area">
+        <div className="country_card">
+          <div>
+            <h1>Reach out to us at your nearest office.</h1>
+          </div>
+          <div className="country-name-container">
+            <div
+              className="country-box"
+              onMouseEnter={() => setIsEnter1(true)}
+              onMouseLeave={() => setIsEnter1(false)}
+              id={isEnter1 ? "active" : "inActive"}
+            >
+              <div>
+                <img src={UNITEDSTATE} />
+              </div>
+              <div>
+                <h2>United States of America</h2>
+              </div>
+              <div>
+                <p>
+                  99 South Almaden Blvd, Suite 600, San Jose, California, CA
+                  95113
+                </p>
+              </div>
+              <div>
+                <p>Ph: 1800 572 7905</p>
+              </div>
+            </div>
+            <div
+              className="country-box"
+              onMouseEnter={() => setIsEnter2(true)}
+              onMouseLeave={() => setIsEnter2(false)}
+              id={isEnter2 ? "active" : "inActive"}
+            >
+              <div>
+                <img src={CANADA} />
+              </div>
+              <div>
+                <h2>Canada</h2>
+              </div>
+              <div>
+                <p>
+                  120 Adelaide Street West, Suite 2500 Toronto, ON, M5H 1T1,
+                  Canada
+                </p>
+              </div>
+              <div>
+                <p>Ph: 1800 572 7905</p>
+              </div>
+            </div>
+            <div
+              className="country-box"
+              onMouseEnter={() => setIsEnter3(true)}
+              onMouseLeave={() => setIsEnter3(false)}
+              id={isEnter3 ? "active" : "inActive"}
+            >
+              <div>
+                <img src={UNITEDLKINGDOM} />
+              </div>
+              <div>
+                <h2>United Kingdom</h2>
+              </div>
+              <div>
+                <p>1 Elmfield Park, Bromley - BR1 1LU, United Kingdom</p>
+              </div>
+              <div>
+                <p>Ph: 0800 949 6909</p>
+              </div>
+            </div>
+            <div
+              className="country-box"
+              onMouseEnter={() => setIsEnter4(true)}
+              onMouseLeave={() => setIsEnter4(false)}
+              id={isEnter4 ? "active" : "inActive"}
+            >
+              <div>
+                <img src={IRELAND} />
+              </div>
+              <div>
+                <h2>Ireland</h2>
+              </div>
+              <div>
+                <p>
+                  The black church, St. Mary’s place, Dublin, Ireland - D07 P4AX
+                </p>
+              </div>
+              <div>
+                <p>Ph: 1800 851 886</p>
+              </div>
+            </div>
+            <div
+              className="country-box"
+              onMouseEnter={() => setIsEnter5(true)}
+              onMouseLeave={() => setIsEnter5(false)}
+              id={isEnter5 ? "active" : "inActive"}
+            >
+              <div>
+                <img src={NETHERLAND} />
+              </div>
+              <div>
+                <h2>Netherlands</h2>
+              </div>
+              <div>
+                <p>Vliegend Hertlaan 15-97, 3526 KT Utrecht, Netherlands</p>
+              </div>
+              <div>
+                <p>Ph: +31 308 992 386</p>
+              </div>
+            </div>
+            <div
+              className="country-box"
+              onMouseEnter={() => setIsEnter6(true)}
+              onMouseLeave={() => setIsEnter6(false)}
+              id={isEnter6 ? "active" : "inActive"}
+            >
+              <div>
+                <img src={INDIA} />
+              </div>
+              <div>
+                <h2>India</h2>
+              </div>
+              <div>
+                <p>
+                  #88, 3rd Floor, Brigade Chambers, Gandhi Bazaar Main Rd,
+                  Basavanagudi, Bangalore-560004 Karnataka, India
+                </p>
+              </div>
+              <div>
+                <p>Ph: 1800 203 9989</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

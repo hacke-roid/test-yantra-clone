@@ -3,14 +3,15 @@ import LOGO from "./testyantralogo.jpeg";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import { FaChevronDown } from "react-icons/fa";
+import { FaChevronUp } from "react-icons/fa";
 
 const NavBar = () => {
   const [serviceHover, setServiceHover] = useState(false);
   const [activeRoute, setActiveRoute] = useState("home");
-  const [isNavbarVisible, setIsNavbarVisible] = useState(true)
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  useEffect(()=>{
+  useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > lastScrollY && currentScrollY > 100) {
@@ -26,11 +27,14 @@ const NavBar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY])
+  }, [lastScrollY]);
 
   return (
-    
-    <div className={`container ${isNavbarVisible ? "navbar-visible" : "navbar-hidden"}`}>
+    <div
+      className={`container ${
+        isNavbarVisible ? "navbar-visible" : "navbar-hidden"
+      }`}
+    >
       <div className="img_containers">
         <img src={LOGO} alt="logo" />
       </div>
@@ -62,7 +66,11 @@ const NavBar = () => {
               >
                 <div className="dropdown-button">
                   <span>Service</span>{" "}
-                  <FaChevronDown style={{ paddingTop: "6px" }} />
+                  {serviceHover ? (
+                    <FaChevronUp style={{ padding: "6px" , color: "orange"}} />
+                  ) : (
+                    <FaChevronDown style={{ paddingTop: "6px" }} />
+                  )}
                 </div>
                 {serviceHover && (
                   <div className="dropdown-options">
@@ -98,7 +106,7 @@ const NavBar = () => {
           </li>
           <li>
             <Link
-              to="/touch"
+              to="/contacts"
               onClick={() => setActiveRoute("touch")}
               className={activeRoute === "touch" ? "active-touch" : ""}
             >
