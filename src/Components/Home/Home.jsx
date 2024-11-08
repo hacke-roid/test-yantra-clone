@@ -66,7 +66,6 @@ const Home = () => {
     },
   ];
 
-  useEffect(() => {}, []);
   React.useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);

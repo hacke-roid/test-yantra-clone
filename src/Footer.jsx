@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import PARTNERLOGO from "./Components/Home/partnerlogo2 (1).svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -54,21 +55,21 @@ const Footer = () => {
           <div className="f2_con">
             <h2>Services</h2>
             <div className="line"></div>
-            <p>Software Testing (TaaS)</p>
-            <p>Software Development</p>
-            <p>Skills Enhancement</p>
-            <p>IT Consulting</p>
-            <p>Crowd Testing</p>
+            <p><Link>Software Testing (TaaS)</Link></p>
+            <p><Link>Software Development</Link></p>
+            <p><Link>Skills Enhancement</Link></p>
+            <p><Link>IT Consulting</Link></p>
+            <p><Link>Crowd Testing</Link></p>
           </div>
         </div>
         <div className="foot1 f2">
           <div className="f2_con">
             <h2>Quick Links</h2>
             <div className="line"></div>
-            <p>About Us</p>
-            <p>Fireflink</p>
-            <p>Article</p>
-            <p>Contact</p>
+            <p><Link to="/about">About Us</Link></p>
+            <p><Link>Fireflink</Link></p>
+            <p><Link>Article</Link></p>
+            <p><Link>Contact</Link></p>
           </div>
         </div>
         <div className="foot1 f3">

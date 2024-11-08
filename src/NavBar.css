@@ -103,6 +103,10 @@ a:hover{
   
 }
 
+.btn_get{
+  cursor: pointer;
+}
+
 .dropdown-options {
   position: absolute;
   top: 100%;
