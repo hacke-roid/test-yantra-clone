@@ -3,8 +3,7 @@ import LOGO from "./testyantralogo.jpeg";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import { FaChevronDown } from "react-icons/fa";
-import { FaChevronUp } from "react-icons/fa";
-
+import { FaChevronUp } from "react-icons/fa6";
 const NavBar = () => {
   const [serviceHover, setServiceHover] = useState(false);
   const [activeRoute, setActiveRoute] = useState("home");
@@ -67,7 +66,7 @@ const NavBar = () => {
                 <div className="dropdown-button">
                   <span>Service</span>{" "}
                   {serviceHover ? (
-                    <FaChevronUp style={{ padding: "6px" , color: "orange"}} />
+                    <FaChevronUp style={{ paddingTop: "6px" }}/>
                   ) : (
                     <FaChevronDown style={{ paddingTop: "6px" }} />
                   )}

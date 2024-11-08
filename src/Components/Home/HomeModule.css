@@ -155,6 +155,10 @@
   gap: 15px;
   padding: 10px;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(to left, transparent 90%, #f27f3d 10%);
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 #box2 {
@@ -168,6 +172,10 @@
   gap: 15px;
   padding: 10px;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(to left, transparent 90%, #f27f3d 10%);
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 #box3 {
   /* border: 2px solid black; */
@@ -180,6 +188,10 @@
   gap: 15px;
   padding: 10px;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(to left, transparent 90%, #f27f3d 10%);
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 #box4 {
@@ -193,6 +205,10 @@
   gap: 15px;
   padding: 10px;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(to left, transparent 90%, #f27f3d 10%);
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 #box5 {
@@ -206,12 +222,17 @@
   gap: 15px;
   padding: 10px;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+  background-image: linear-gradient(to left, transparent 90%, #f27f3d 10%);
+  background-size: 100% 2px;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 #box1.active {
   border-bottom: 5px solid #f27f3d;
   transition-duration: 0.5s;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+  background-image: none;
 }
 
 #box1.active:hover {
@@ -224,6 +245,7 @@
   border-bottom: 5px solid #f27f3d;
   transition-duration: 0.5s;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+  background-image: none;
 }
 
 #box2.active:hover {
@@ -236,6 +258,7 @@
   border-bottom: 5px solid #f27f3d;
   transition-duration: 0.5s;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+  background-image: none;
 }
 
 #box3.active:hover {
@@ -248,6 +271,7 @@
   border-bottom: 5px solid #f27f3d;
   transition-duration: 0.5s;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+  background-image: none;
 }
 
 #box4.active:hover {
@@ -260,6 +284,7 @@
   border-bottom: 5px solid #f27f3d;
   transition-duration: 0.5s;
   box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+  background-image: none;
 }
 
 #box5.active:hover {

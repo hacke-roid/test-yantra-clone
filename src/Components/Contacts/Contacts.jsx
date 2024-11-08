@@ -128,6 +128,7 @@ const Contacts = () => {
               <div>
                 <p>Ph: 1800 572 7905</p>
               </div>
+              <div className="small-border"></div>
             </div>
             <div
               className="country-box"
