@@ -4,101 +4,86 @@ import PARTNERLOGO from "./Components/Home/partnerlogo2 (1).svg";
 
 const Footer = () => {
   return (
-    <div className="footer_container">
-      <footer className="footer-area">
-        <div className="container_footer">
-          <div className="subscribe_container">
-            <div className="ai-subscribe-content">
-              <h2>Subscribe to our Newsletter!</h2>
-              <form>
-                <div className="input_btn">
-                  <input
-                    type="text"
-                    placeholder="Enter Your Business Email"
-                    className="subscribe_input"
-                  />
-                  <button type="submit" className="subscibe_btn">
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
+    <section className="sec6">
+      <div className="search_con">
+        <h1>Subscribe to our Newsletter!</h1>
+        <br />
+        <div className="search_bar">
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Enter Your Business Email"
+          />
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div className="footcon">
+        <div className="foot1">
+          <div className="f_img">
+            <img
+              src="https://www.testyantraglobal.com/images/partnerlogo2.svg"
+              alt=""
+            />
           </div>
-          <div className="content-container">
-            <div className="logo-container">
-              <div className="all-container">
-                <div>
-                  <img src={PARTNERLOGO} alt="partnerlogo" />
-                </div>
-                <div>
-                  <p>
-                    Test Yantra Global is an Exclusive Platinum Partner of
-                    FireFlink.
-                  </p>
-                </div>
-                <div>
-                  <p>Let's get socially connected...</p>
-                </div>
-              </div>
-            </div>
-            <div className="container_all">
-              <div className="logo-container">
-                <div className="service-container">
-                  <div>
-                    <h2>Services</h2>
-                  </div>
-                  <div>
-                    <ul>
-                      <li>Software Testing (TaaS)</li>
-                      <li>Software Development</li>
-                      <li>Skills Enhancement</li>
-                      <li>IT consultant</li>
-                      <li>Crowd Testing</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="logo-container">
-                <div className="quick-link">
-                  <div>
-                    <h2>Quick Links</h2>
-                  </div>
-                  <div>
-                    <ul>
-                      <li>About Us</li>
-                      <li>FireFlink</li>
-                      <li>Article</li>
-                      <li>Contact</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className="logo-container">
-                <div className="contacts-container">
-                  <div>
-                    <h2>Contacts</h2>
-                  </div>
-                  <div>
-                    <ul>
-                      <li>
-                        <b>Address:120</b> Adelaide Street West,
-                      </li>
-                      <li>Suite 2500, Toronto, ON, M5H 1T1, Canada.</li>
-                      <li>
-                        <b>Email:</b>hello@testyantraglobal.com
-                      </li>
-                      <li>
-                        <b>Phone:</b>1800 572 7905
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <p>
+            Test Yantra Global is an Exclusive Platinum Partner of FireFlink.
+          </p>
+          <br />
+          <p>Let's get socially connected...</p>
+          <br />
+          <div className="icons">
+            <span>
+              <i class="fa-brands fa-linkedin"></i>
+            </span>
+            <span>
+              <i class="fa-brands fa-youtube"></i>
+            </span>
+            <span>
+              <i class="fa-brands fa-square-twitter"></i>
+            </span>
+            <span>
+              <i class="fa-brands fa-square-facebook"></i>
+            </span>
+            <span>
+              <i class="fa-brands fa-instagram"></i>
+            </span>
           </div>
         </div>
-      </footer>
-    </div>
+        <div className="foot1 f1">
+          <div className="f2_con">
+            <h1>Services</h1>
+            <div className="line"></div>
+            <p>Software Testing (TaaS)</p>
+            <p>Software Development</p>
+            <p>Skills Enhancement</p>
+            <p>IT Consulting</p>
+            <p>Crowd Testing</p>
+          </div>
+        </div>
+        <div className="foot1 f2">
+          <div className="f2_con">
+            <h1>Quick Links</h1>
+            <div className="line"></div>
+            <p>About Us</p>
+            <p>Fireflink</p>
+            <p>Article</p>
+            <p>Contact</p>
+          </div>
+        </div>
+        <div className="foot1 f3">
+          <div className="f2_con">
+            <h1>Contacts</h1>
+            <div className="line"></div>
+            <p>Address:120 Adelaide Street</p>
+            <p>Wast,</p>
+            <p>Suite 2500, Toronto, ON, M5H 1T1, Canada.</p>
+            <p>Email:hello@testyantraglobal.com</p>
+            <p>Phone:1800 572 7905</p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
