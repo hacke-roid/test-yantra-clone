@@ -63,31 +63,40 @@ li {
 
 a {
   text-decoration: none;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bolder;
   font-style: normal;
   color: #162d52;
 }
 
-a:hover{
+a:hover {
   color: #f27f3d;
 }
 
-.home-active{
+.home-active {
   color: #f27f3d;
 }
 
-.service-active{
+#ig{
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  color: #162d52;
+}
+
+.service-active {
   color: #f27f3d;
 }
 
-.partner-active{
+.partner-active {
   color: #f27f3d;
 }
-.article-active{
+.article-active {
   color: #f27f3d;
 }
-.active-touch{
+.active-touch {
   color: #f27f3d;
 }
 
@@ -100,10 +109,9 @@ a:hover{
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
-  
 }
 
-.btn_get{
+.btn_get {
   cursor: pointer;
 }
 
@@ -156,12 +164,6 @@ a:hover{
   }
 }
 
-
-
-
 .navbar-visible {
   top: 0;
 }
-
-
-
