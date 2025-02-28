@@ -197,7 +197,7 @@ const Home = () => {
           </div>
         </div>
         <div className="background_container">
-        <div
+          <div
             className="row2"
             style={{
               backgroundImage: `url(${slides[currentSlide].background})`,
@@ -210,9 +210,18 @@ const Home = () => {
               </div>
               <div className="slide_list">
                 <ul>
-                  <li><FaArrowCircleRight style={{color: "#f27f3d"}}/> {slides[currentSlide].description1}</li>
-                  <li><FaArrowCircleRight style={{color: "#f27f3d"}}/> {slides[currentSlide].description2}</li>
-                  <li><FaArrowCircleRight style={{color: "#f27f3d"}}/> {slides[currentSlide].description3}</li>
+                  <li>
+                    <FaArrowCircleRight style={{ color: "#f27f3d" }} />{" "}
+                    {slides[currentSlide].description1}
+                  </li>
+                  <li>
+                    <FaArrowCircleRight style={{ color: "#f27f3d" }} />{" "}
+                    {slides[currentSlide].description2}
+                  </li>
+                  <li>
+                    <FaArrowCircleRight style={{ color: "#f27f3d" }} />{" "}
+                    {slides[currentSlide].description3}
+                  </li>
                 </ul>
               </div>
             </div>

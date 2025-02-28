@@ -45,7 +45,7 @@ const SoftwareTesting = () => {
               solutions for web, android, ios, API, and databases.
             </p>
           </div>
-          <div className="software-section-allbox">
+          <div className="softwa  re-section-allbox">
             <div className="software-section-box">
               <img src={ManageQA} alt="manageQA" />
               <h3>Managed QA</h3>

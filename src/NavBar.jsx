@@ -100,7 +100,7 @@ const NavBar = () => {
                 )}
               </div>
             </div>
-          </li>
+          </li> 
           <li>
             <div
               id="ig"
